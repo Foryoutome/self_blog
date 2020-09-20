@@ -1,0 +1,45 @@
+
+		<div class="container large">
+		  <div class="pagination">
+		    <ul class="page-ul">
+		      <li> <a href="javascript:void(0)"><</a></li>
+		      <li> <a href="javascript:void(0)">1</a> </li>
+			  <li class="active"> <a href="javascript:void(0)">2</a> </li>
+		      <li> <a href="javascript:void(0)">3</a> </li>
+		      <li> <a href="javascript:void(0)">4</a> </li>
+			  <li> <a href="javascript:void(0)">5</a> </li>
+		      <li> <span class="point">...</span></li>
+		      <li> <a href="javascript:void(0)">50</a> </li>
+			  <li> <a href="javascript:void(0)">></a> </li>
+		    </ul>
+			  
+		  </div>
+		</div>
+
+		<script>
+			const pageNum = 5;
+			const totalPage = 10;
+			function findIndex(index){
+				if(pageNum<=3||totalPage<=5){
+					return index;
+				}else if(pageNum>=totalPage-2){
+					return pageNum-5+i;
+				}else{
+					return pageNum-3+i;
+				}
+			}
+			if(totalPage>=5){
+				for(i=1;i<=5;i++){
+					console.log(findIndex(i));
+				}
+			}else{
+				for(i=1;i<=totalPage;i++){
+					console.log(findIndex(i));
+				}
+			}
+			
+			// for(i=1;i<= (totalPage>=5?5:totalPage);i++){
+			// 	console.log(findIndex(i));
+			// }
+			
+		</script>/

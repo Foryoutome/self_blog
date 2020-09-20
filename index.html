@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="layui/css/layui.css" />
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/head.css" />
+		<link rel="stylesheet" href="css/page.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<script src="js/jquery-1.9.1.js"></script>
+		<script src="layui/layui.js"></script>
+		<script>
+		        $(function(){
+		            //页面加载的时候，内容框默认显示 a.html
+		            
+		            });
+		    </script>    
+	</head>
+	<body>
+		<div id="head"></div>
+		<script>
+			$("#head").load("public/head.html");
+		</script>
+		
+		<div class="main-body">
+			<div><h1>最新发布</h1></div>
+			<div class="article">
+				<hr class="layui-bg-cyan">
+				<h2 class="article-title">怎么养猪</h2>
+				<img class="article-img" src="img/封面1.jpg" />
+				<div class="right-font">怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文，
+				怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文，怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文<span>...</span></div>
+				<div>
+					<a class="layui-btn layui-btn-radius layui-btn-primary submit-button">查看全文</a>
+				</div> 
+				<div class="category">
+					分类： 
+					<a href="#"><span class="layui-badge-rim">java</span></a>
+					<a href="#"><span class="layui-badge-rim">python</span></a>
+					<a href="#"><span class="layui-badge-rim">c#</span></a>
+				</div>
+				<div class="publish">
+					<span><i class="layui-icon">&#xe770;</i>:chicken<span class="publish-time">2019.09.26 11:22:33</span>
+					<span class="publish-right">
+					<span><i class="layui-icon">&#xe670;</i>:200</span>
+					<span><a href="#"><i class="layui-icon">&#xe611;</i>:100</a></span>
+					<span><i class="layui-icon">&#xe68f;</i>:200</span>
+					</span>
+				</div> 
+			</div>
+			<div class="article">
+				<hr class="layui-bg-cyan">
+				<h2 class="article-title">怎么养猪</h2>
+				<img class="article-img" src="img/封面1.jpg" />
+				<div class="right-font">怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文，
+				怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文，怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文，怎么养猪正文<span>...</span></div>
+				<div>
+					<a class="layui-btn layui-btn-radius layui-btn-primary submit-button">查看全文</a>
+				</div> 
+				<div class="category">
+					分类： 
+					<a href="#"><span class="layui-badge-rim">java</span></a>
+					<a href="#"><span class="layui-badge-rim">python</span></a>
+					<a href="#"><span class="layui-badge-rim">c#</span></a>
+				</div>
+				<div class="publish">
+					<span><i class="layui-icon">&#xe770;</i>:chicken<span class="publish-time">2019.09.26 11:22:33</span>
+					<span class="publish-right">
+					<span><i class="layui-icon">&#xe670;</i>:200</span>
+					<span><a href="#"><i class="layui-icon">&#xe611;</i>:100</a></span>
+					<span><i class="layui-icon">&#xe68f;</i>:200</span>
+					</span>
+				</div> 
+			</div>
+			<div class="top-body">
+			<a href="#"><i class="layui-icon return-top">&#xe604;</i></a>
+			</div>
+			<div id="page"></div>
+			<script>   
+				$("#page").load("public/page.html");
+			</script>
+		</div>
+		<div style="position: relative;">
+		<div class="hot-article">
+			<h2>热门文章</h1>
+			<ul>
+				<li><a href="#">怎么养猪</a></li>
+				<li><a href="#">怎么养猪</a></li>
+				<li><a href="#">怎么养猪</a></li>
+				<li><a href="#">怎么养猪</a></li>
+				<li><a href="#">怎么养猪</a></li>
+				<li><a href="#">怎么养猪</a></li>
+			</ul>
+		</div>
+		</div>
+		<div id="footer"></div>
+		<script>
+			$("#footer").load("public/footer.html");
+		</script>
+	</body>
+	<script>
+		//注意：导航 依赖 element 模块，否则无法进行功能性操作
+		layui.use('element', function() {
+			var element = layui.element;
+
+			//…
+		});
+	</script>
+</html>
